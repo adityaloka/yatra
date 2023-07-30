@@ -4,7 +4,7 @@ pipeline {
         stage('check version of git, maven,java') {
             steps {
 			        sh('git --version')
-                    sh('mvn -version')
+                    sh('mvn --version')
                     sh('java --version')					
                
             }
